@@ -18,12 +18,11 @@ V2.2 - Update 6 - Bugfixes and the return of the suggest-title button.
 
 body {
 	background-color: #000000;
+	/*background-color:#F8F8FF color:white;*/
+	font-weight:bold;
 	color: #3b3b3b;
 	font-family: arial, sans-serif;
 }
-
-
-/*body {background-color:#F8F8FF color:white;font-weight:bold;}*/
 
 	/* Custom browser CSS */
 	:focus {outline: 0px;}
