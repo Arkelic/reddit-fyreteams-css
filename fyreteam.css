@@ -883,6 +883,10 @@ body {
 			border-radius: 2px;
 		}
 
+			.link:hover {
+				border-right: 3px solid #C02502 !important;
+			}
+
 			.link, .side, .submit-page .infobar, .roundfield, .submit-page .content button,
 			.content.submit .info-notice, .stylesheet-customize-container .pretty-form, #images, .search-page .raisedbox,
 			.search-page .searchfacets, .linefield, .search-page .searchpane, .nextprev {
