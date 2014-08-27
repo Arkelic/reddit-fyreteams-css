@@ -1998,7 +1998,7 @@ body {
 
 				.comments-page .comment .comment {
 					background-color: #FCFCFC !important;
-					border: 2px solid #F6F6F6;
+					border: 2px solid #F6F6F6 !important;
 					border-radius: 3px;
 					margin-right: 5px;
 				}
@@ -2009,6 +2009,8 @@ body {
 					font-size: 14px;
 					font-family: Arial, sans-serif;
 					line-height: 1.35em;
+					max-width: 100em;
+					margin-right: 20px;
 				}
 
 					hr {
@@ -2247,7 +2249,7 @@ body {
 
 		.res .comment {
 			margin-top:0px !important;
-			margin-bottom: 3px !important;
+			/*margin-bottom: 3px !important;*/
 			border: 1px solid #f8f8f8 !important;
 		}
 
@@ -2354,8 +2356,8 @@ body {
 		border: 0px solid !important;
 		border-radius: 0px !important;
 		color: #5b92fa !important;
-		padding: 3px;
-		margin-left: 0px;
+		padding: 3px!important;
+		margin-left: 0px!important;
 	}
 
 	.res #header-bottom-right {
