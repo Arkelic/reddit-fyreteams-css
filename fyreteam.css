@@ -415,6 +415,7 @@ body {
 			border: none;
 			border-radius: 2px;
 			margin-left: 15px;
+			border-radius: 2px;
 			transition: all 0.15s ease;
 		}
 
@@ -778,6 +779,7 @@ body {
 		font-weight: bold;
 		font-size: 15px;
 		font-family: arial, sans-serif;
+		border-radius: 2px;
 		transition: all 0.15s ease;
 	}
 
@@ -1067,7 +1069,7 @@ body {
 
 					.redditSingleClick {transition: opacity 0.15s ease-in-out;}
 
-				/*.link .entry li a, .redditSingleClick {opacity: 0;}*/		/* Currently causing issues. Needs investigating - https://github.com/Axel--/Naut-for-reddit/issues/9 */
+				/*.link .entry li a, .redditSingleClick {opacity: 0;}*/		/* 2.2 changes - Currently causing issues. Needs investigating - https://github.com/Axel--/Naut-for-reddit/issues/9 */
 				.link:hover .entry li a, .link .entry p a, .link:hover .entry .redditSingleClick {opacity: 100;}
 
 
@@ -1868,14 +1870,14 @@ body {
 			color: #404040;
 		}	
 
-
+		/* Comments Page */
 		.commentarea {
 			margin-top: 10px;
 			margin-right: 320px;
 			margin-bottom: 30px;
-			padding: 10px 10px 10px 10px;
-			background-color: #F8F8FF;
-			border-bottom: 3px solid #e5e5e5;
+			/*padding: 10px 10px 10px 10px;*/
+			/*background-color: #F8F8FF;*/
+			/*border-bottom: 3px solid #e5e5e5;*/
 			color: #3b3b3b;
 		}
 
@@ -1923,7 +1925,7 @@ body {
 				display: inline;
 				margin: 0 0px 10px -320px;
 				padding: 0;
-				color: #c0c0c0;
+				color: #FCFCFC;
 				font-weight: normal;
 				font-size: 110%;
 			}
@@ -1934,16 +1936,27 @@ body {
 					color: #c0c0c0;
 				}
 
-				/*.commentarea .menuarea .toggle a, .panestack-title .title, .help-hoverable {display: none;}*/
+				/*.commentarea .menuarea .toggle a, .panestack-title .title, .help-hoverable {display: none;}*/ /*2.2 change*/
 				.panestack-title .title {display: none;}
-				.menuarea .spacer {margin-right: -15px;}
-				.commentarea .menuarea .toggle a {font-size: 11px;color:#c0c0c0;font-weight: normal; }
-				.menuarea .spacer .drop-choices.lightdrop {
-					padding: 5px;
-					border-color: #DFDDDD;
-					box-shadow: 0px 1px 1px #C9C9C9;
-					font-family: arial, sans-serif;
+				
+				.commentarea .menuarea .toggle a {
+					font-size: 11px;
+					color:#FCFCFC;C02502
+					font-weight: normal; 
 				}
+					.commentarea .menuarea .toggle a:hover {
+						background: transparent;
+						color:#C02502;
+					}
+
+				.menuarea .spacer {margin-right: -15px;}
+					
+					.menuarea .spacer .drop-choices.lightdrop {
+						padding: 5px;
+						border-color: #DFDDDD;
+						box-shadow: 0px 1px 1px #C9C9C9;
+						font-family: arial, sans-serif;
+					}
 
 					.titlebox form.toggle, .leavemoderator {background-color: transparent;}
 
@@ -1961,32 +1974,48 @@ body {
 
 				.menuarea .dropdown.lightdrop .selected {
 					background-image: none;
-					color: #3b3b3b;
+					color: #FCFCFC;
 					text-decoration: none;
 					opacity: 10;
 					cursor: pointer;
 				}
 
-					.menuarea .dropdown.lightdrop .selected:hover {color: #5b92fa;}
+					.menuarea .dropdown.lightdrop .selected:hover {color: #C02502;}
 					.menuarea .dropdown.lightdrop .selected:after {
 						content: " ≡";
 						vertical-align: middle;
 						opacity: 0.5;
 					}
 
-			.comments-page .comment .md {
-				color: #161616;
-				font-weight: normal;
-				font-size: 14px;
-				font-family: Arial, sans-serif;
-				line-height: 1.35em;
+			.comments-page .comment {
+				background-color: #FCFCFC !important;
+				border-radius: 2px;
+				padding-top: 5px;
+				margin-bottom: 8px;
+				padding-bottom: 1px;
+				padding-left: 10px;
 			}
 
-				hr {
-					border-width: 1px;
-					border-style: solid;
-					border-color: #e5e5e5;
+				.comments-page .comment .comment {
+					background-color: #FCFCFC !important;
+					border: 2px solid #F6F6F6;
+					border-radius: 3px;
+					margin-right: 5px;
 				}
+
+				.comments-page .comment .md {
+					color: #161616;
+					font-weight: normal;
+					font-size: 14px;
+					font-family: Arial, sans-serif;
+					line-height: 1.35em;
+				}
+
+					hr {
+						border-width: 1px;
+						border-style: solid;
+						border-color: #e5e5e5;
+					}
 
 			.comments-page textarea {
 				background-color: #fff;
@@ -2007,6 +2036,9 @@ body {
 					background-color: #f0f0f0;
 				}
 
+			.comment, .content .details {
+    			margin-left: 0px;
+			}
 
 			.comment .expand {
 				background-color: transparent;
@@ -2050,10 +2082,11 @@ body {
 		font-size: 1.05em;
 		width: 270px;
 		height: 25px;
-	        line-height: 25px;
+		line-height: 25px;
 		background-color: #535353;
 		text-align: center;
-	        margin-top: 5px;
+		margin-top: 5px;
+		border-radius: 2px;
 	}
 
 	/* Footer */
