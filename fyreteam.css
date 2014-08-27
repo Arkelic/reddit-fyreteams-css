@@ -17,7 +17,8 @@ V2.2 - Update 6 - Bugfixes and the return of the suggest-title button.
 -------------------------------------------------------------------------- */
 
 body {
-	background-color: #000000;
+	background: url(%%starmap%%) no-repeat fixed center center transparent;
+	/*background-color: #000000;*/
 	/*background-color:#F8F8FF color:white;*/
 	font-weight:bold;
 	color: #3b3b3b;
@@ -200,22 +201,26 @@ body {
 
 			#header-img:hover {background-position: -44px -224px;}
 
+		/*.pagename {visibility: hidden;}*/
+
 		.pagename a {
+			top: 84px; /* The length the logo is moved from the top of the page */
+			width: 185px; /* TOTAL Image width */
+			height: 43px;
 			display: block;
 			visibility: visible !important;
 			position: absolute;
 			left: 8px;
 			z-index: 99;
-			background-image: url(%%fyreteams%%);
+			background-image: url(%%logo-off%%);
 			background-position: 0px 0px;
 			background-repeat: no-repeat;
 			text-indent: -9999px;
 		}
 
-			.pagename a:hover {background-position: 0px -77px;}
-
-
-		.pagename {visibility: hidden;}
+			.pagename a:hover {
+				background-image: url(%%logo-on%%);
+			}
 
 	/* HOT / NEW / ETC */
 	#header .tabmenu {
@@ -2665,14 +2670,5 @@ body {
 	div.titlebox span.number:after {content: " Guardians of Clan Blackfyre";} /* Leave the space before the name! */
 
 	/* --------------------------- */
-
-	/* CUSTOM LOGO CSS */
-	.pagename a {
-		top: 84px; /* The length the logo is moved from the top of the page */
-		width: 185px; /* TOTAL Image width */
-		height: 43px; /* 50% of the TOTAL height of the image. */
-	}
-
-		.pagename a:hover {background-position: 0px -43px;} /* Replace the 77 with your height */
 
 /* --------------------------- */
