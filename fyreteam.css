@@ -1941,7 +1941,7 @@ body {
 				
 				.commentarea .menuarea .toggle a {
 					font-size: 11px;
-					color:#FCFCFC;C02502
+					color:#FCFCFC;
 					font-weight: normal; 
 				}
 					.commentarea .menuarea .toggle a:hover {
@@ -2197,6 +2197,16 @@ body {
 		.search-summary {margin-right: 40px;}
 
 	/* Fuckin' Reddit Enhancement Suite (RES) */
+	#REScommentNavToggle span {
+		float: left;
+		margin-left: 0px;
+		padding-bottom: 5px;
+	}
+
+	.commentingAs {
+		color: #fcfcfc;
+	}
+
 	.res .keyHighlight {
 		background-color: transparent;
 		outline: 0px solid;
@@ -2219,7 +2229,7 @@ body {
 				width: 150px !important;
 				text-align: left !important;
 				padding: 2px;
-				margin: 0px 12px 0px 12px;
+				margin: 4px 0px 0px 12px;
 			}
 
 		/* Res Live Preview */
@@ -2344,6 +2354,8 @@ body {
 		border: 0px solid !important;
 		border-radius: 0px !important;
 		color: #5b92fa !important;
+		padding: 3px;
+		margin-left: 0px;
 	}
 
 	.res #header-bottom-right {
