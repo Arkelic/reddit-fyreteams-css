@@ -1589,6 +1589,21 @@ body {
 				}
 
 
+			.linkflair-loot .linkflairlabel {
+				/*background-color: #C02502;*/
+				background-color: #FC1F70;
+				color: #FFFFFF;
+			}
+				/*
+				.linkflair-loot .thumbnail.default, .linkflair-loot .thumbnail.self {
+					background-image: url(%%blackfyre-sprite-sheet%%);
+					width: 64px;
+					height: 64px;
+					background-position: -064px -288px;
+					background-repeat: no-repeat;
+				}*/
+
+
 	/* ------ START USER FLAIR ----- */
 	.flair {
 		height: auto;
@@ -1640,6 +1655,7 @@ body {
 		.flair-oldwarlock:before	{background-position: -000px -144px;}
 		.flair-oldhunter:before		{background-position: -024px -144px;}
 		.flair-oldtitan:before		{background-position: -048px -144px;}
+		.flair-praise:before		{background-position: -000px -168px;}
 
 		/* Also, here's a plaintext flair WITHOUT any images! 
 		Use 'plaintext' in the css field! */
