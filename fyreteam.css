@@ -1603,6 +1603,20 @@ body {
 					background-repeat: no-repeat;
 				}*/
 
+			.linkflair-media .linkflairlabel {
+				/*background-color: #C02502;*/
+				background-color: #46AAAD;
+				color: #FFFFFF;
+			}
+				/*
+				.linkflair-media .thumbnail.default, .linkflair-media .thumbnail.self {
+					background-image: url(%%blackfyre-sprite-sheet%%);
+					width: 64px;
+					height: 64px;
+					background-position: -064px -288px;
+					background-repeat: no-repeat;
+				}*/
+
 
 	/* ------ START USER FLAIR ----- */
 	.flair {
@@ -1656,6 +1670,9 @@ body {
 		.flair-oldhunter:before		{background-position: -024px -144px;}
 		.flair-oldtitan:before		{background-position: -048px -144px;}
 		.flair-praise:before		{background-position: -000px -168px;}
+		.flair-speaker:before		{background-position: -024px -168px;}
+		.flair-modtitan:before		{background-position: -048px -168px;}
+
 
 		/* Also, here's a plaintext flair WITHOUT any images! 
 		Use 'plaintext' in the css field! */
