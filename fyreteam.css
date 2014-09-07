@@ -972,7 +972,7 @@ body {
 
 			/* Expand post */
 			.expando-button {
-				margin: -1px 5px 0px 0px !important;
+				margin: 2px 5px 0px 0px !important;
 				width: 16px !important;
 				height: 16px !important;
 				background-color: transparent !important;
