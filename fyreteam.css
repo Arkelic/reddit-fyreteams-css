@@ -1672,6 +1672,9 @@ body {
 		.flair-praise:before		{background-position: -000px -168px;}
 		.flair-speaker:before		{background-position: -024px -168px;}
 		.flair-modtitan:before		{background-position: -048px -168px;}
+		.flair-modpvp:before		{background-position: -000px -192px;}
+		.flair-modarcblade:before	{background-position: -024px -192px;}
+		.flair-modhunter:before		{background-position: -048px -192px;}
 
 
 		/* Also, here's a plaintext flair WITHOUT any images! 
