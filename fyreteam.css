@@ -20,7 +20,7 @@ body {
 	background: url(%%starmap%%) no-repeat fixed center center transparent;
 	/*background-color: #000000;*/
 	/*background-color:#F8F8FF color:white;*/
-	font-weight:bold;
+	/*font-weight:bold;*/
 	color: #3b3b3b;
 	font-family: arial, sans-serif;
 }
@@ -1629,7 +1629,8 @@ body {
 		/*background: url(%%flairsheet-small%%) no-repeat scroll -9999px -9999px transparent;*/
 		display:inline-block;
 		color: #555;
-		font-size: 1.2em !important;
+		font-size: 1.1em !important;
+		font-weight:bold;
 		/*font-family: Calibri,Arial,sans-serif;*/
 		font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 		/*cursor: help;*/
@@ -1638,6 +1639,7 @@ body {
 		.flair:before {
 			display: inline-block;
 			margin-right: 1px;
+			margin-bottom: 1px;
 			width: 24px;
 			height: 24px;
 			background: url(%%flairsheet-small%%) no-repeat scroll -9999px -9999px transparent;
@@ -1675,6 +1677,7 @@ body {
 		.flair-modpvp:before		{background-position: -000px -192px;}
 		.flair-modarcblade:before	{background-position: -024px -192px;}
 		.flair-modhunter:before		{background-position: -048px -192px;}
+		.flair-modiron:before		{background-position: -000px -216px;}
 
 
 		/* Also, here's a plaintext flair WITHOUT any images! 
